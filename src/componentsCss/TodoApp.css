@@ -1,0 +1,134 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todoListContainer {
+    padding: 1rem 1.5rem;
+    height: 100vh;
+    background: linear-gradient(to top, #000000, #2a4b57, #4b8ba7);
+}
+
+.mainContainer {
+    width: 40%;
+    margin: auto;
+    box-shadow: #00000082 2px 2px 10px;
+    height: 410px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.header {
+    box-shadow: 1px 3px 4px #6765658c;
+    border-radius: 3px 0px 6px 6px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.inputSection {
+    padding: 10px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 5px;
+}
+
+.date h1 {
+    font-size: 19px;
+    color: #434242;
+}
+
+.leftArrow {
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.addBtn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.addTaskList {
+    height: 29px;
+    border: 2px solid #d60fb278;
+    border-radius: 10px;
+    width: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    color: #a10534;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.addTask {
+    font-size: 17px;
+}
+
+.inputTask {
+    padding: 4px 10px;
+    border-radius: 8px;
+    border-color: #b9b6b6;
+    font-size: 20px;
+    width: 100%;
+}
+
+.todoRenderContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoRenderContainer li {
+    list-style-type: none;
+    font-size: 21px;
+}
+
+.MenuContainer {
+    display: flex;
+    column-gap: 8px;
+}
+
+.removeTodo {
+    font-size: 18px;
+}
+
+.editTodo {
+    font-size: 18px;
+}
+
+.taskList {
+    padding: 10px 9px;
+    height: 241px;
+    overflow-y: scroll;
+}
+
+.endContainer {
+    padding: 0px 7px;
+}
+
+.endContainer span {
+    color: blue;
+    cursor: pointer;
+}
+
+@media screen and (max-width:560px) {
+    .mainContainer {
+        width: 100%;
+    }
+
+    .inputTask {
+        padding: 4px 10px;
+        border-radius: 8px;
+        border-color: #b9b6b6;
+        font-size: 20px;
+    }
+}
